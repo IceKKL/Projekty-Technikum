@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Selektory</title>
+		<meta charset="UTF-8">
+		<style>
+			body {
+				background-color: 	#303030;
+				color: #e5e5e5;
+				margin: 0px;
+			}
+			div {
+				margin-left: 8px;
+			}
+			a {
+				text-decoration: none;
+				margin-left: 8px;
+				color: #007fff;
+			}
+			b {
+				font-size: 18px;
+				color: #007fff;
+			}
+			.nagłówek {
+				text-decoration: underline;
+			}
+			#Spis {
+				text-align: center;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				padding: 10px;
+				background-color: #585858;
+				border-bottom: 3px solid black;
+				margin-left: 0px;
+			}
+			#Spis  >a {
+				margin-left: 20px;
+				color: #e5e5e5;
+			}
+			#Spis > a:hover {
+				color: white;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			#fir-let:first-letter {
+				color: red;
+				font-size: 24px;
+			}
+			#focus:focus {
+				background-color: red;
+			}
+			#fir-lin:first-line {
+				color: red;;
+			}
+			#act:active {
+				color: red;
+			}
+			#hov:hover {
+				color: red;
+			}
+			#powrot {
+				font-size: 24px;
+				padding: 10px;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Spis -->
+	<div id="Spis">
+		<a href="#n1">Selektory elementów</a>
+		<a href="#n2">Selektory atrybtutów</a>
+		<a href="#n3">Selektory specjalne</a>
+		<a href="#n4">Selektory pseudoklas</a>
+		<a href="#n5">Selektory pseudoelementów</a>
+	</div>
+		<!-- Selektory elementów -->
+	<div>
+		<a name="n1"></a>
+		<h1 class="nagłówek" >Selektory elementów</h1>
+		<p><b>Selektor typu elementu</b> - np. p,h1,h2 służy do zdefiniowania jaki format znacznika wystąpi na stronie</p>
+		<p><b>Selektor uniwersalny</b> - pasuje do wszystkich elementów oznaczany * (gwiazdką) służy do łatwiejszego formatowania wszystkich elementów np: * {color: red;}</p>
+		<p><b>Selektor potomka</b> - pozwala na formatowanie elementów które są w innych elementach składnia to np: div a {color: red;}</p>
+		<p><b>Selektor dziecka</b> - służy do definiowania formatowania elementów które są o jedną pozycję niżej w hierarchii dokumentu np: div > a {color: red;}</p>
+		<p><b>Selektor sąsiadującego brata</b> - jest dla elementów znajdujących się w tej samej hierarchii, pozwala na nadnie drugiemu sąsiadującemu elementowi 
+			konkretnych atrybutów przyjmuje on postać np: div + p {color: red;}</p>
+		<p><b>Selektor braci</b>  - selektor ten nadaje się do nadania drugiemu i każdemu następnemu elementowi konkretnych atrybutów np: div ~ p {color: red;}</p>
+	</div>
+		<!-- Selektory atrybutów -->
+	<div>
+		<a name="n2"></a>
+		<h1 class="nagłówek">Selektory atrybutów</h1>
+		<p><b>Prosty selektor atrybtutu</b> - jest wykorzystywany w elementach którym jest nadany konkretny atrybut ale jego wartość się nie liczy np: p [id]{color: red;}</p>
+		<p><b>Selektor atrybutu o określonej wartości</b> - określa formatowanie kiedy atrybut ma konkretną wartość np: p[id="id"] {color: red;}</p>
+		<p><b>Selektor atrybutu zawierającego określony wyraz</b> - może być użyty gdy jego wartość atrybutu składa się z kilku wyrazów i jeżeli jako atrybut pojawi się konkretny wyraz
+			to zostanie on odpowiednio sformatowany np: p[title~="jest"] {color: red;}</p>
+	</div>
+		<!-- Selektory specjalne -->
+	<div>
+		<a name="n3"></a>
+		<h1 class="nagłówek" >Selektory specjalne</h1>
+		<p><b>Selektor klasy</b> - pozwala na nadanie wybranych atrybutów elementom występującym na stronie, pozwala na stworzenie klas dla różnych grup elementów np: p.tekst {color: red;}
+		klasę nadaje się poprzez użycie wpisania class="nazwa_klasy" jako atrybut elementu</p>
+		<p><b>Uniwersalny selektor klasy</b> - czasem definiując klasę nie definiujemy jakich znaczników będzie dotyczyła dzięki temu będzie działać z każdym znacznikiem z tą klasą
+		np: .tekst {color: red;} klasę nadaję się tak samo jak przy poprzednim znaczniku</p>
+		<p><b>Selektor identyfikatora</b> -	kiedy chcemy nadać określone atrybuty konkretnemu elementowi który wystepuje tylko raz i ma on przypisany identfikator (id). Deklaruje się go 
+		poprez # np: #tekst {color: red;} lub p#tekst {color: red;} id nadaje się poprzez wpisanie id="id_naszego_elementu" jako atrybut </p>
+
+	</div>
+		<!-- Pseudo klasy -->
+	<div>
+		<a name="n4"></a>
+		<h1 class="nagłówek">Selektory pseudoklas</h1>
+		<p><b>:focus</b> - daje atrybuty formatowania odsyłaczowi lub polu formularza na którym jest kursor np :focus{ background-color: red; }</p><button id="focus">Da nam taki rezultat</button> <-- wciśnij
+		<a name="skok1"></a>
+		<p><b>:active</b> - daje atrybuty formatowania naszego wyboru odsyłaczowi który jest aktualnie aktywny
+			np: a:active{ color: red;}</p><a href="#skok1" id="act">Da nam taki rezultat</a>
+		<p><b>:hover</b> - nadaje nasz wybrane formatowanie elementowi gdy nasza myszka jest nad nim
+			np: :hover{ color:red;}</p><p id="hov">Da nam taki wynik</p>
+		<p><b>:link</b> - nadaje konkretne atrybuty jeszcze nie klikniętym linkom
+		<p><b>:visited</b> - nadaje odwiedzonym odsyłaczom atrybuty które wcześniej otworzyliśmy</p>
+	</div>
+		<!-- Pseudo elementy -->
+	<div>
+		<a name="n5"></a>
+		<h1 class="nagłówek">Selektory pseudoelementów</h1>
+		<p><b>:first-letter</b> - nadaje on osobne formatowanie pierwszej literze
+			np: :first-letter{color: red;} </p><p id="fir-let">da nam taki rezultat</p> 
+		<p><b>:first-line</b> - nadaje wybrane przez nas foramtowanie pierwszej linii znacznika w którym 
+			jest użyty np: :first-line{color: red;}</p><p id="fir-lin">da nam taki rezultat <br/> druga linia</p>
+	</div>
+	<hr/>
+	<a href="#n1" id="powrot">Powrót na górę</a>
+	</body>
+	</html>
+	
