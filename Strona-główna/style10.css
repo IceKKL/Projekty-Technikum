@@ -1,0 +1,236 @@
+body
+{
+    background-image: linear-gradient(to top, #153303, #2ac731);
+    background-repeat: no-repeat;
+    height: 1500px;
+}
+#box
+{
+    margin-left: -335px;
+    margin-right: 50px;
+    margin-top: 250px;
+    position: relative;
+    animation-name: box;
+    animation-duration: 1.5s;
+    border: 3px solid rgb(54, 54, 54);
+    animation-fill-mode: forwards;
+    float: left;
+}
+
+#box1
+{
+    margin-top: 250px;
+    position: relative;
+    animation-name: box;
+    animation-duration: 2s;
+    border: 3px solid rgb(54, 54, 54);
+    animation-fill-mode: forwards;
+    float: left;
+}
+
+#box2
+{
+    margin-left: 50px;
+    margin-top: 250px;
+    position: relative;
+    animation-name: box;
+    animation-duration: 2.5s;
+    border: 3px solid rgb(54, 54, 54);
+    animation-fill-mode: forwards;
+    float: left;
+}
+
+#box3
+{
+    margin-left: 50px;
+    margin-top: 10px;
+    position: relative;
+    animation-name: box;
+    animation-duration: 2s;
+    border: 3px solid rgb(54, 54, 54);
+    animation-fill-mode: forwards;
+    float: left;
+}
+
+#box4
+{
+    margin-left: 50px;
+    margin-top: 10px;
+    position: relative;
+    animation-name: box;
+    animation-duration: 2s;
+    border: 3px solid rgb(54, 54, 54);
+    animation-fill-mode: forwards;
+    float: left;
+}
+
+#box5
+{
+    margin-left: 50px;
+    margin-top: 10px;
+    position: relative;
+    animation-name: box;
+    animation-duration: 2s;
+    border: 3px solid rgb(54, 54, 54);
+    animation-fill-mode: forwards;
+    float: left;
+}
+
+#text
+{
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    text-align: center;
+
+}
+
+#line
+{
+    width: 200px;
+    border: 1px solid rgb(54, 54, 54);
+    opacity: 0;
+    animation-name: box1;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+#text1
+{
+    color: transparent;
+    font-family: arial;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    animation-name: box1;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes box1
+{
+    0%
+        {
+            opacity: 0;
+            width: 10px;
+            font-size: 1%;
+        }
+    50%
+        {
+            opacity: 1;
+            width: 200px;
+        }
+    100%
+        {
+            opacity: 1;
+            width: 200px;
+            color: white;
+            font-size: 40%;
+        }
+}
+@keyframes box
+{
+    0% 
+        {
+            width: 8%; 
+            height: 5%; 
+            left: 0px; 
+            top: 0px; 
+            line-height: 20px; 
+            font-size: 1%; 
+            border-radius: 50%;
+            margin-top: 100px;
+            background-image: linear-gradient(to top, #F1F2B5, #bae7a5);
+        }
+    50% 
+        {
+            width: 8%; 
+            height: 10%;       
+            left: 400px;
+            top: -100px; 
+            line-height: 125px;
+            font-size: 250%; 
+            border-radius: 5px;
+            margin-top: 250px;
+            background-image: linear-gradient(to top,rgb(206, 236, 135), rgb(123, 190, 60));
+        }
+    90%
+        {
+            width: 12%; 
+            height: 25%;  
+            left: 400px;
+            top: -100px; 
+            line-height: 20px;
+            font-size: 250%; 
+            border-radius: 15px;
+            margin-top: 200px;
+            background-image: linear-gradient(to top, #58f830, #235739);
+        }
+    100%
+        {
+            width: 12%; 
+            height: 25%; 
+            left: 400px;
+            top: -100px; 
+            line-height: 20px;
+            font-size: 250%; 
+            border-radius: 15px;
+            margin-top: 200px;
+            background-image: linear-gradient(to top, #58f830, #235739);
+        }    
+}
+
+@keyframes box3
+{
+    0% 
+        {
+            width: 50px; 
+            height: 50px; 
+            left: 0px; 
+            top: 0px; 
+            line-height: 20px; 
+            font-size: 1%; 
+            border-radius: 50%;
+            margin-top: 100px;
+            background-image: linear-gradient(to top, #F1F2B5, #bae7a5);
+        }
+    50% 
+        {
+            width: 205px; 
+            height: 205px; 
+            left: -400px;
+            top: -100px; 
+            line-height: 125px;
+            font-size: 250%; 
+            border-radius: 5px;
+            margin-top: 250px;
+            background-image: linear-gradient(to top,rgb(206, 236, 135), rgb(123, 190, 60));
+        }
+    90%
+        {
+            width: 525px; 
+            height: 250px; 
+            left: -400px;
+            top: -100px; 
+            line-height: 20px;
+            font-size: 250%; 
+            border-radius: 15px;
+            margin-top: 250px;
+            background-image: linear-gradient(to top, #58f830, #235739);
+        }
+    100%
+        {
+            width: 525px; 
+            height: 350px; 
+            left: -400px;
+            top: -100px; 
+            line-height: 20px;
+            font-size: 250%; 
+            border-radius: 15px;
+            margin-top: 50px;
+            background-image: linear-gradient(to top, #58f830, #235739);
+        }    
+}
+
+

@@ -1,0 +1,10 @@
+/*selektor typu element*/
+h3{
+	font-size: 30pt;
+	color: red;
+}
+
+p{
+	font-size: 10pt;
+	color: blue;
+}

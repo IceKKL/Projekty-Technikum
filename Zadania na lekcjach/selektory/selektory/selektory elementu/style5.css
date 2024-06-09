@@ -1,0 +1,5 @@
+/*selektor sąsiadującego brata*/
+div+p{
+	font-size: 15pt;
+	color: blue;
+}

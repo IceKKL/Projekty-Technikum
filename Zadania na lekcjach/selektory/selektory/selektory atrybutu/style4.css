@@ -1,0 +1,4 @@
+/*selektor atrybutu zawierającego określony wyraz*/
+p[title~="jest"]{
+	color: red;
+}
