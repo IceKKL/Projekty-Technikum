@@ -1,0 +1,105 @@
+body {
+    background-image: linear-gradient(rgb(211, 82, 82),#d15544);
+    margin: 0; 
+}
+#tlo {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-image: url("snieg.gif");
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgb(161, 55, 55);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: -.1%;
+}
+#naglowek {
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+    font-family: Georgia, serif;
+}
+#Tekst {
+    background-image: url("snieg2.gif");
+}
+#Tekst p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a3fa0;
+    font-family: Georgia, serif;
+}
+#yo {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 90px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+.Prezent {
+    margin-left: 0.5%;
+    margin-top: 2px;
+    text-align: center;
+    width: 99%;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-family: Georgia, serif;
+}
+.Prezent > img {
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 10vw;
+    height: 20vh;
+}
+.Prezent > img:hover {
+    width: 25vw;
+    height: 50vh;
+    border: 10px solid rgba(0, 0, 0,0.5);
+}
+.ukryte {
+    opacity: 0;
+}
+.Prezent:hover .ukryte {
+    opacity: 1;
+}
+.animacja:hover {
+	-webkit-animation: animacja 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	        animation: animacja 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+}
+@-webkit-keyframes animacja {
+    0% {
+      -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+              box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+  @keyframes animacja {
+    0% {
+      -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+              box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+  ::-webkit-scrollbar {
+      width: .65vw;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: 2px solid black;
+
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border: 2px solid black;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

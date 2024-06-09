@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" type="text/css" href="style2_BM.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="ikona.png">
+</head>
+<body>
+    <!-- Niektóre znaczniki mają class zamist id bo js nie pozwalał tak zrobić-->
+    
+    <div id="cover">
+        <img src="loading.gif" id="loading">
+    </div>
+    <div id="banner">
+        <h1 id="title">Rejestracja</h1>
+    </div>
+
+    <div id="box">
+        <form action="mailto:kapitannaczos@gmail.com?subject=formularz" method="post" enctype="text/plain">
+            <h1>Formularz Rejestracyjny</h1>
+            <label>Podaj swoją nazwę przywoływacza:</label>
+            <input type="text" class="space">
+            <label>Wybierz płeć: </label>
+            <input type="radio" name="plec"> Kobieta <input type="radio" name="plec" class="space"> Mężczyzna
+            <label>Podaj wiek:</label>
+            <input name="age" type="number" id="wiek" class="space"> 
+            <label >Podaj adres e-mail:</label> 
+            <input name="email" type="email" class="space"> 
+            <div class="wybor" id="radio">
+                <label>Wybierz rangę</label>
+                <input type="radio" name="ranga"> Żelazo <br/>
+                <input type="radio" name="ranga"> Bronz <br/>
+                <input type="radio" name="ranga"> Srebro <br/>
+                <input type="radio" name="ranga"> Złoto <br/>
+                <input type="radio" name="ranga"> Platyna <br/>
+                <input type="radio" name="ranga"> Diament <br/>
+                <input type="radio" name="ranga"> Mistrz <br/>
+                <input type="radio" name="ranga"> Arcymistrz <br/>
+                <input type="radio" name="ranga" class="space"> Pretendent <br/>
+            </div>
+            <label>Wybierz swoją rolę:</label>
+            <div class="space">
+                <select name="rola" size="5" multiple>
+                    <option>Toplane</option>
+                    <option>Jungle</option>
+                    <option>Midlane</option>
+                    <option>Bottom</option>
+                    <option>Support</option>
+                </select>
+            </div>
+            <div class="wybor">
+                <label>Wybierz swoje zainteresowania:</label>
+                <input type="checkbox"> Farmienie <br/>
+                <input type="checkbox"> Walka <br/>
+                <input type="checkbox"> Neutralne Stwory <br/>
+                <input type="checkbox"> Niszczenie Struktur <br/>
+                <input type="checkbox"> Utrudnianie Gry <br/>
+                <input type="checkbox"> Inne (podaj jakie) <input type="text" id="inne" class="space"> 
+            </div>
+            <label>Podaj swoje uwagi</label>
+            <textarea name="uwagi" cols="20" rows="7" placeholder="Nie są cenione"></textarea> <br/>
+            <input type="checkbox"> Zgadzam się na przetwarzanie moich danych osobowych
+            <div id="right">
+                <input type="submit"> <input type="reset">
+            </div>
+        </form>
+    </div>
+
+    <div id="menu_btn">
+        <p id="center">Menu</p>
+        <a href="index_BM.html"><p class="link" id="link1">Strona Główna</p></a>
+        <a href="index3_BM.html"><p class="link" id="link2">Czym są gry MOBA?</p></a>
+        <a href="index4_BM.html"><p class="link" id="link3">Popularność</p></a>
+        <a href="index5_BM.html"><p class="link" id="link4">E-sport</p></a>
+        <img src="X.png" class="link" id="x"/>
+    </div>
+
+
+    <div id="footer">
+        <hr>
+        <p id="text3">Bartłomiej Malina | MOBA</p>
+    </div>
+    
+    <script src="script_BM.js"></script>
+</body>
+</html>

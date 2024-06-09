@@ -1,0 +1,17 @@
+form {
+    border: 2px solid black;
+    width: max-content;
+    padding: 10px;
+}
+input {
+    margin-top: 5px;
+}
+#right {
+    margin-left: 32px;
+}
+#wiek {
+    width: 150px;
+}
+#inne {
+    width: 90px;
+}

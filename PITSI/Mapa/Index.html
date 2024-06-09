@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <p class="tekst">&nbsp Lista Państw <br/>
+            <ol class="tekst">
+                <li>Syria</li>
+                <li>Tajwan</li>
+                <li>Mongolia</li>
+                <li>Korea Południowa</li>
+                <li>Korea Północna</li>
+                <li>Kambodża</li>
+                <li>Wietnam</li>
+                <li>Bhutan</li>
+                <li>Oman</li>
+                <li>Jemen</li>
+            </ol>
+        </p>
+        <hr>
+        <p id="legenda">
+            Legenda: <br/>
+           Wyróznione kraje: <img src="Pin.png" alt="Pin" id="img"><br/>
+        </p>
+    </div>
+    <div>
+        <img src="Azja.png" alt="mapa odsyłaczy" usemap="#mapa" id="mapa"/>
+        <map name="mapa">
+        
+        <div id="Syria">
+            <area shape="circle" coords="48,298,4" href="https://pl.wikipedia.org/wiki/Damaszek" target="_blank" alt="Damaszek">
+            <area shape="poly" 
+                coords="47,288,54,277,59,274,69,280,89,281,86,286,81,286,79,292,75,297,62,299,48,301,43,299,45,293," 
+                href="https://pl.wikipedia.org/wiki/Syria" target="_blank" alt="Korea-PN">
+        </div>
+
+        <div id="Tajwan"> 
+            <area shape="circle" coords="543,355,4" href="https://pl.wikipedia.org/wiki/Tajpej" target="_blank" alt="Taipei">
+            <area shape="poly" 
+                coords="545,350,547,360,545,374,539,368,539,359,"
+                href="https://pl.wikipedia.org/wiki/Republika_Chi%C5%84ska" target="_blank" alt="Tajwan">
+        </div>
+
+        <div id="Mongolia">
+            <area shape="circle" coords="413,227,4" href="https://pl.wikipedia.org/wiki/U%C5%82an_Bator" target="_blank" alt="Ulan Bator">
+            <area shape="poly" 
+                coords="328,229,338,220,343,218,355,218,356,220,371,221,371,214,369,211,369,208,371,204,387,207,390,212,397,212,400,209,410,209,416,211,430,211,442,201,448,201,452,199,453,205,455,213,462,213,467,210,474,211,474,216,469,218,466,220,466,229,461,233,457,240,448,241,448,250,442,257,434,261,425,265,420,269,414,270,403,267,390,265,376,270,369,264,360,257,352,256,346,257,344,246,340,236," 
+                href="https://pl.wikipedia.org/wiki/Mongolia" target="_blank" alt="Mongolia">
+        </div>
+
+        <div id="Korea-PD">
+            <area shape="circle" coords="543,260,4" href="https://pl.wikipedia.org/wiki/Seul" target="_blank" alt="Seul">
+            <area shape="poly" 
+                coords="539,267,541,256,546,253,547,253,560,267,547,280,543,273,545,271,542,267,539,266,543,264," 
+                href="https://pl.wikipedia.org/wiki/Korea_Po%C5%82udniowa" target="_blank" alt="Korea-PD">
+        </div>
+
+        <div id="Korea-PN">
+            <area shape="circle" coords="529,252,4" href="https://pl.wikipedia.org/wiki/Pjongjang" target="_blank" alt="Pjongjang">
+            <area shape="poly" 
+                coords="544,251,539,254,537,259,533,261,529,260,528,255,526,251,522,252,522,249,523,246,525,236,532,235,537,222,541,223,540,237,536,244,537,249," 
+                href="https://pl.wikipedia.org/wiki/Korea_P%C3%B3%C5%82nocna" target="_blank" alt="Korea-PN">
+        </div>
+
+        <div id="Kambodża">
+            <area shape="circle" coords="455,474,4" href="https://pl.wikipedia.org/wiki/Phnom_Penh" target="_blank" alt="Phnom Penh">
+            <area shape="poly" 
+                coords="445,476,441,460,446,457,457,457,463,459,467,456,472,458,473,464,471,468,465,472,456,484,447,481," 
+                href="https://pl.wikipedia.org/wiki/Kambod%C5%BCa" target="_blank" alt="Korea-PN">
+        </div>
+
+        <div id="Wietnam">
+            <area shape="circle" coords="453,409,4" href="https://pl.wikipedia.org/wiki/Hanoi" target="_blank" alt="Hanoi">
+            <area shape="poly" 
+                coords="433,403,440,415,445,415,447,419,445,421,445,423,448,423,452,426,469,441,470,446,472,456,475,460,474,464,467,473,457,484,458,494,483,470,484,457,479,442,457,423,457,416,469,400,462,401,462,397,460,394,451,393," 
+                href="https://pl.wikipedia.org/wiki/Wietnam" target="_blank" alt="Korea-PN">
+        </div>
+
+        <div id="Bhutan">
+            <area shape="circle" coords="351,379,4" href="https://pl.wikipedia.org/wiki/Thimphu" target="_blank" alt="Thimphu">
+            <area shape="poly" 
+                coords="352,374,362,376,365,381,364,383,348,383,347,379,352,374" 
+                href="https://pl.wikipedia.org/wiki/Bhutan" target="_blank" alt="Korea-PN">
+        </div>
+
+        <div id="Oman">
+            <area shape="circle" coords="155,400,4" href="https://pl.wikipedia.org/wiki/Maskat" target="_blank" alt="Maskat">
+            <area shape="poly" 
+                coords="138,398,139,391,143,385,148,392,159,397,164,406,153,417,148,419,146,428,138,432,128,437,116,436,113,418,134,416,141,408," 
+                href="https://pl.wikipedia.org/wiki/Oman" target="_blank" alt="Korea-PN">
+        </div>
+
+        <div id="Jemen">
+            <area shape="circle" coords="58,431,4" href="https://pl.wikipedia.org/wiki/Sana" target="_blank" alt="Sana">
+            <area shape="poly" 
+                coords="50,421,59,419,68,434,88,419,112,418,115,436,109,442,89,444,77,448,55,449,51,446,49,438,48,427," 
+                href="https://pl.wikipedia.org/wiki/Jemen" target="_blank" alt="Korea-PN">
+        </div>
+        
+        <area shape="rect" coords="0,0,700,656" href="https://www.facebook.com/bartek.malina.77/" target="_blank" alt="Azja">
+        </map>
+    </div>
+    <hr/>
+    <div id="ramka">
+        <p id="bm">Bartłomiej Malina</p>
+    </div>
+    
+</body>
+</html>

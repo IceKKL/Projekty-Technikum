@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--
+    <form action="mailto:kapitannaczos@gmail.com?subject=formularz" method="post" enctype="text/plain">
+        Pole tekstowe: <input type="text" name="Nazwisko" value="dom wartość pola"  size="20"><br/>
+        Pole numeryczne <input type="number"><br/>
+        Pole zaznaczania <input type="checkbox"><br/>
+        Pole wyboru<input type="radio"><br/>
+        Pole przycisku przesyłającego<input type="submit"><br/>
+        Pole przycisku resetującego<input type="reset"><br/>
+        Pole przycisku<input type="button"><br/>
+        Pole hasła<input type="password"><br/>
+        Pole załącznika<input type="file"><br/>
+        Pole niewidoczne<input type="hidden"><br/>
+        Pole koloru<input type="color"><br/>
+        Pole daty<input type="date"><br/>
+        Pole email<input type="email"><br/>
+    </form>
+
+    identyfikator - numeryczny
+    kraj rezydencji - teks
+    rodzaj - radio
+    data - numeryczny
+    prześlij/resetuj
+    -->
+
+    <P>C.1.1 Dane identyfikacyjne posiadacza rachunku</P>
+
+    <hr/>
+
+    <form id="form1">
+        <table>
+            <tr>
+                <td>Identyfikator TIN: <input type="number"></td>
+                <td>Kraj rezydencji: <input type="text"></td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <ol>
+                        <li>Rodzaj posiadacza: <input type="radio" name="wybory"> osoba indywidualna</li>
+                        <li id="left"><input type="radio" name="wybory"> organizacja</li>
+                    </ol>
+               </td>
+            </tr>
+
+            <tr>
+                <td>Nazwisko: <input type="text"></td>
+                <td>Imię: <input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Drugie imię: <input type="text"></td>
+                <td>Narodowość: <input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Data urodzenia: <input type="number"></td>
+                <td>Miejsce urodzenia: <input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Kraj urodzenia: <input type="text"></td>
+            </tr>
+        </table>
+    </form>
+
+    <hr/>
+
+    <P>C.1.2 Adres siedziby posiadacza rachunku</P>
+
+    <hr/>
+
+    <form>
+        <table>
+            <tr>
+                <td>Kraj siedziby: <input type="text"></td>
+                <td>Skrytka pocztowa: <input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Ulica: <input type="text"></td>
+                <td>Kod pocztowy: <input type="number"></td>
+            </tr>
+
+            <tr>
+                <td class="small">Nr domu / Nr lokalu: <input type="number"> / <input type="number"></td>
+                <td>Miejscowość: <input type="text"></td>
+            </tr>
+
+            <tr>
+                <td class="small">Piętro: <input type="text"></td>
+            </tr>
+            
+            <tr>
+                <td>Adres opisowy: <input type="text"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

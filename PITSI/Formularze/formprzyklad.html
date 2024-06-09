@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Formularz kontaktowy</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      body 
+      {
+        font-family:Arial,sans-serif;
+        font-size:14px;
+        color:#02639a;
+      }
+      form.formularz 
+      {
+        width:260px;
+        background-color:#e5f0f7;
+        border:2px solid #02639a;
+        border-radius:10px;
+        padding:20px;
+        margin-top:20px;
+      }
+        .formularz label 
+        {
+          display:block;
+          margin-bottom:5px;
+          text-transform:uppercase;
+        }
+        .formularz textarea, .formularz input#nazwisko , .formularz input#nazwisko, 
+        .formularz input#email 
+        {
+          padding:5px;
+          border-radius:3px;
+          border:1px solid #02639a;
+          margin-bottom:25px;
+          width:245px;
+          font-family:Arial,sans-serif;
+          font-size:14px;
+          color:#02639a;
+        }
+        .formularz input#submit 
+        {
+          width:255px; 
+          font-family:Arial,sans-serif;
+          color:#02639a;
+          font-size:14px;
+        }        
+    </style>
+  </head>
+  <body>
+    <div class="formularz">
+      <form action="kontakt.html" method="post">
+        <label>Imię i nazwisko</label>
+        <input name="nazwisko" id="nazwisko">
+        <label>E-mail</label>
+        <input name="email" type="email" id="email">
+        <label>Wiadomość</label>
+        <textarea name="wiadomosc" placeholder="Napisz tu wiadomość"></textarea>
+        <input type="submit" name="wyslij" id="submit" value="Wyślij">
+      </form>  
+    </div>
+  </body>
+</html> 

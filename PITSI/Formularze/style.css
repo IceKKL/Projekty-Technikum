@@ -1,0 +1,22 @@
+body {
+    background-color: grey;
+}
+form {
+    text-align: right;
+    margin-left: 20px;
+}
+input {
+    margin-top: 5px;
+}
+ol {
+    list-style: none;
+}
+.small > input {
+    width: 74px;
+}
+#form1 {
+    margin-left: 32px;
+}
+#left {
+    margin-right: 55px;
+}

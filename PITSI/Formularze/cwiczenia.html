@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="mailto:kapitannaczos@gmail.com?subject=formularz" method="post" enctype="text/plain">
+        Pole tekstowe: <input type="text" name="Nazwisko" value="dom wartość pola"  size="20"><br/>
+        Pole numeryczne <input type="number"><br/>
+        Pole zaznaczania <input type="checkbox"><br/>
+        Pole wyboru<input type="radio"><br/>
+        Pole przycisku przesyłającego<input type="submit"><br/>
+        Pole przycisku resetującego<input type="reset"><br/>
+        Pole przycisku<input type="button"><br/>
+        Pole hasła<input type="password"><br/>
+        Pole załącznika<input type="file"><br/>
+        Pole niewidoczne<input type="hidden"><br/>
+        Pole koloru<input type="color"><br/>
+        Pole daty<input type="date"><br/>
+        Pole email<input type="email"><br/>
+
+        <fieldset>
+            <legend><b>tytuł</b></legend>
+            jakieś pola formularza
+        </fieldset>
+        Etykiety: <br>
+        <label>
+            <input type="checkbox" name="etykieta" value="">Ektykieta pola
+        </label> <br>
+        inny sposób: <br>
+        <input type="checkbox" name="etykieta" value="">
+        <label for="pole">Etykieta pola</label>
+        <select name="lista" size="5" multiple>
+            <option>Pierwszy element</option>
+            <option>Drugi element</option>
+            <option>Trzeci element</option>
+            <option>Czwarty element</option>
+            <optgroup label="pierwszy">
+                <option>Pierwszy element</option>
+                <option>Drugi element</option>
+            </optgroup>
+            <optgroup label="drugi">
+                <option>Trzeci element</option>
+                <option>Czwarty element</option>
+            </optgroup>
+        </select>
+
+        <textarea name="blok" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>
