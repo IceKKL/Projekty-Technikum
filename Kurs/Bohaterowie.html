@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body {
+            margin: 0px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .nawigacja {
+            position: fixed;
+            width: 100%;
+            background-color: #0080ff;
+            text-align: right;
+            padding: 10px;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        .navbar > a{
+            font-size: 1.5rem;
+            color: white;
+            margin-right: 1.5rem;
+            margin-left: -1rem;
+        }
+        .powitanie {
+            text-align: center;
+            background-color: #663f19;
+            padding: 50px;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: 2px solid black;
+        }
+        .lista {
+            text-align: center;
+            background-color: #7b4c1e;
+            padding: 20px;
+            color: white;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            grid-template-rows: repeat(2, auto);
+        }
+        .grid > a{
+            color: white;
+            font-size: 2rem;
+        }
+        .postacie {
+            text-align: left;
+            margin-left: 1rem;
+        }
+        .ikona_postaci {
+            width: 2.5vw;
+            height: 5vh;
+            margin-bottom: -1.25vh;
+            margin-right: .5vw;
+            border-radius: 20px;
+        }
+        .ikona_postaci_lewo{
+            width: 2.5vw;
+            height: 5vh;
+            border-radius: 20px;
+            margin-left: -60vw;
+            margin-top: 10vh;
+            
+
+        }
+        .powody {
+            background-color: #8f5823;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+        .powody > h1 {
+            text-align: center;
+        }
+        .nazwa {
+            font-size: 2rem;
+            margin-left: 1vw;
+            margin-right: 1vw;
+        }
+        .lista_powody {
+            font-size: 1.25rem;
+            margin-top: -3vh;
+            margin-left: 1vw;
+            margin-right: 1vw;
+        }
+        .powody_div {
+            margin-left: 10vw;
+            margin-right: 12.5vw;
+            width: 75vw;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+            border-radius: 10px;
+        }
+        .powody_div:hover {
+            background-color: #72461c;
+            border: 2px solid black;
+        }
+        .cień:hover {
+	-webkit-animation: cień  0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: cień 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@-webkit-keyframes cień  {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
+@keyframes cień  {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
+    </style>
+<body>
+    <div class="nawigacja">
+        <nav class="navbar">
+            <a href="#Przywitanie"><b>Przywitanie</b></a>
+            <a href="#Lista"><b>Lista Postaci</b></a>
+            <a href="#Powody"><b>Powody</b></a>
+        </nav>
+    </div>
+    <div class="powitanie" id="Przywitanie">
+        <h1>Postacie których nie lubię</h1>
+        <p>Strona na opisze powody przez które nie lubię konkretnych postaci</p>
+    </div>
+    <div class="lista">
+    <h1 id="Lista">Lista Postaci</h1>
+    <div class="grid" id="Lista">
+        <a href="#Teemo"><p class="postacie"><img class="ikona_postaci" src="http://pm1.narvii.com/6389/05e24f24397473c6ba7e98db1e48b819680c9a68_00.jpg" alt="Teemo">Teemo</p></a>
+        <a href="#Leona"><p class="postacie"><img class="ikona_postaci" src="https://www.mobafire.com/images/avatars/leona-classic.png" alt="Leona">Leona</p></a>
+        <a href="#Vladimir"><p class="postacie"><img class="ikona_postaci" src="https://d181w3hxxigzvh.cloudfront.net/wp-content/uploads/2017/09/Vladimir_Splash_Tile_0.jpg" alt="Vladimir">Vladimir</p></a>
+        <a href="#Irelia"><p class="postacie"><img class="ikona_postaci" src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-irelia-reveal/pl_PL/abd275e634ae15e22975cdeb5d03b65df6b65180/assets/img/content/wallpaper/base-thumb.jpg" alt="Irelia">Irelia</p></a>
+        <a href="#Tahm"><p class="postacie"><img class="ikona_postaci" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCYDi6IGNMXeTWcTpenrsZhr3dtak2Zh7NTmkpdo6jAEW1b8ynq5LHPCQAqpa_iSBcPto&usqp=CAU" alt="Tahm Kench">Tahm</p></a>
+        <a href="#Seraphine"><p class="postacie"><img class="ikona_postaci" src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt006d3795f7957981/5f975f98209f0756c89d3e13/SERAPHINE_SOCIAL_ICON_FINAL.jpg" alt="Seraphine">Seraphine</p></a>
+    </div>
+    </div>
+    <div class="powody">
+        <h1 id="Powody">Powody</h1>
+    <div class="powody_div cień">
+    <p id="Teemo" class="nazwa">Teemo</p>
+    <P class="lista_powody">Powodem dla którego go nie lubię jest to zę ma blinda, i jako main ADC jest to raczej nieprzyjemne, oprócz tego niewidzialność na zawołanie i
+        grzyby w każdej części mapy które z jakiegoś powodu zabierają mojej postaci 50% od każdego wdepniętego przez co ginę dosyć szybko nawet w walkach drużynowych 
+        jeżeli ktoś losowo w takiego wdepnie.
+    </P>
+    </div>
+    <div class="powody_div cień">
+        <p id="Leona" class="nazwa">Leona</p>
+        <P class="lista_powody">Lvl 2 haha, na 3 jest jeszcze gorzej bo ma +20 pancerza i odporności na magię, do tego dochodzi aftershock i nie jest zabawnie naprawdę.
+            Nie będę pisał dużo więcej bo każdy wie jak bardzo nie lubię tej postaci.
+    </P>
+    </div>
+    <div class="powody_div cień">
+        <p id="Vladimir" class="nazwa">Vladimir</p>
+        <P class="lista_powody">Cały laning phase zadaje 0 obrażeń, no chyba że naładuje ten czerwoniutki pasek to wtedy siup, +1000hp dla niego a ty ledwo stoisz bo
+            cię zoutskillował swoim point-and-click skillem który krytuje po 200 na 5 lvl bez backa, bo jak że by inaczej. To może się go łatwo łapie? Nie. Klika plamę
+            i essa zrigczowana każdy skill uniknięty.
+    </P>
+    </div>
+    <div class="powody_div cień">
+        <p id="Irelia" class="nazwa">Irelia</p>
+        <P class="lista_powody">Istnieje, skacze po całej mapie przy okazji one-shotując cały twój zespół i lecząc siebie do pełnego zdrowia więc po wyjściu z 1v5 i 
+            zrobieniu penty ma wystarczająco hp żeby solować barona.
+    </P>
+    </div>
+    <div class="powody_div cień">
+        <p id="Tahm" class="nazwa">Tahm Kench</p>
+        <P class="lista_powody">W early 200+ dmg z każdego Q, do tego świetnie się skaluje i może wytankować cały zespół przez około 10 sekund po czym dodaje kolejne
+            kilka po kliknięciu E, no poważnie co to jest, early stompuje każdą linię a w late po prostu ignoruje twoje 30% przebicia pancerza i anty-heala.
+    </P>
+    </div>
+    <div class="powody_div cień">
+        <p id="Seraphine" class="nazwa">Seraphine</p>
+        <P class="lista_powody">No lepsza Sona na, drze japę i nagle masz charma, przy okazji jak dostałeś to zasięg jej ulta się powieksza dwukrotnie, co? Nie rozumiem
+            kto na to pozwilił i pomyślał że to dobre rozwiązanie ale mam nadzieję że ma ciepłą posadkę w nie tworzeniu postaci.
+    </P>
+    </div>
+
+    
+</body>
+</html>

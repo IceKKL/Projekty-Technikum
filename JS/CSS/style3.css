@@ -1,0 +1,52 @@
+body {
+    background-color: red;
+}
+p {
+    color: white;
+    font-size: 400%;
+}
+#pierwszy {
+    background-color: pink;
+    color: green;
+    height: 100px;
+}
+#drugi {
+    background-color: #ffaabb;
+    color: #aabbcc;
+    height: 100px;
+}
+#trzeci {
+    background-color: #fab;
+    color: #f11;
+    height: 100px;
+}
+#czwarty {
+    background-color: rgb(10, 255, 10);
+    color: rgb(2, 3, 255);
+    height: 100px;
+}
+#piaty {
+    background-color:rgb(0%, 50%, 51%);
+    color: rgb(20%, 20%, 20%);
+    height: 100px;
+}
+#szosty {
+    background-color:  hsl(180, 50%, 50%);
+    color: hsl(rgb(75, 196, 51), 0.5, 1);
+    height: 100px;
+}
+#siodmy {
+    background-color: rgba(25, 1, 255, .5);
+    color: rgba(255, 10, 10, .9);
+    height: 100px;
+}
+#osmy {
+    background-color: rgba(25%, 25%, 25%, 1);
+    color: rgba(75%, 75%, 75%, 75%);
+    height: 100px;
+}
+#dziewiec {
+    background-color: hsla(255, 50%, 50%, 1);
+    color: hsla(#00f, .5, 1, .5);
+    height: 100px;
+}

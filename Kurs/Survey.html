@@ -1,0 +1,89 @@
+<main id="main">
+    <style>
+        h1 {
+            
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        body{
+			background-image:url(https://preview.redd.it/in73r6sbixz31.png?width=4096&format=png&auto=webp&s=810fa4aef8f17b2ccf3ca4c18601eb731904d37e);
+			background-size: cover;
+			background-attachment: fixed;
+        
+		}
+        div {
+            
+            background: white;
+			width: 50%;
+			padding: 5px;
+			margin: 5px auto;
+			border-radius: 10px;
+            border:black solid 1px;
+            opacity: 0.85;
+        } 
+       
+        
+        
+    </style>
+   <div> 
+    <h1 id="title">Witam na ankiecie</h1>
+    <p id="description">Ta ankieta będzie pytać o twoje preferencje do ADC w lidze legend</p>
+    <form id="survey-form">
+        <div>
+        <label id="name-label" for="name">Imię</label>
+        <input id="name" type="text" placeholder="Imię" required>
+    </div>
+    <div>
+        <label id="email-label" for="email">E-mail</label>
+        <input id="email" type="email" placeholder="E-mail" required>
+    </div>
+    <div>
+        <label id="number-label" for="number">Numer</label>
+        <input id="number" type="number" min="1" max="99" placeholder="Numer">
+    </div>
+    <div>
+        <label>Która z tych dwóch postaci jest lepsza?</label>
+        <br>
+        <label for="dropdown">
+        <select>
+            <optgroup id="dropdown">
+                <option value="Jhin">Jhin</option>
+                <option value="Ashe">Ashe</option>
+            </optgroup>
+        </select>
+        </label>
+    </div>
+    <div>
+        <label>Ulubiony typ ADC</label>
+        <br>
+        <input type="radio" id="radio1" name="Typ ADC" value="Hypercarry">
+        <label for="radio1">Hypercarry</label>
+        <input type="radio" id="radio2" name="Typ ADC" value="Artyleria">
+        <label for="radio2">Artyleria</label>
+        <input type="radio" id="radio3" name="Typ ADC" value="Utility">
+        <label for="radio3">Utility</label>
+    </div>
+    <div>
+        <label>Na jakich liniach można grać ADC?</label>
+        <br>
+        <input type="checkbox" id="checkbox1" name="LiniaADC" value="TOP">
+        <label for="checkbox1">Top</label>
+        <input type="checkbox" id="checkbox2" name="LiniaADC" value="MID">
+        <label for="checkbox2">Mid</label>
+        <input type="checkbox" id="checkbox3" name="LiniaADC" value="BOT">
+        <label for="checkbox3">Bot</label>
+    </div>
+    <div>
+        <label>Dodatkowe uwagi</label>
+        <br>
+        <textarea id="textarea" name="uwagi" rows="4" cols="10"></textarea>
+    </div>
+    <div>
+        <button id="submit" type="submit">Prześlij</button>
+    </div>
+        
+    </form>
+</div>
+</main>

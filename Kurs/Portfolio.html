@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<main>
+    <style>
+        body {
+            margin: 0px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        html::-webkit-scrollbar {
+            width: 1vw;
+        }
+        html::-webkit-scrollbar-thumb {
+            background-color: #7c0000;
+        }
+        html::-webkit-scrollbar-thumb:hover {
+            background-color: #b20000;
+        }
+        html::-webkit-scrollbar-track {
+            background-color: #555;
+        }
+        html::-webkit-scrollbar-track:hover {
+            background-color: #5555;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        body {
+            margin: 0px;
+        }
+        .przywitanie {
+            text-align: center;
+            background: #30353a;
+            text-emphasis-color: white;
+            padding: 410px;
+
+        }
+        .welcome-section > p {
+            font-size: 4rem;
+            font-weight: 100;
+            color: #b20000;
+            margin-top: 1px;
+        }
+        .welcome-section > h1 {
+            color: white;
+            font-size: 5rem;
+            margin-bottom: 1px;           
+        }
+        .nawigacja {
+            background-color: #b20000;
+            text-align: right;
+            border-left: #3A3530 solid 1px;
+            border-right: #3A3530 solid 1px;
+            border-bottom: #3A3530 solid 1px;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+        }
+        .navbar > a {
+            font-size: 1.75rem;
+            color: white;
+            margin-right: 1rem;
+ 
+        }
+        #a1:hover, #a2:hover, #a3:hover{
+            color: #30353a ;
+            text-decoration: none;
+        }
+        .projekty {
+            background-color: #323232;
+            padding: 50px;
+            text-align: center;
+            margin-bottom: 0px;
+
+            
+        }
+        .projekty > h1 {
+            color: white;
+        }
+        .obrazek {
+        width: calc(100% - 2px);
+        height: 100%;
+        background-size: cover;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, auto) ;
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+            row-gap: 50px;
+            margin: 0px
+            
+        }
+        .paragraf {
+            background-color: rgb(179, 179, 179);
+            margin-top: -4px;
+            border-bottom: 1px solid #b20000;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding: 10px; 
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-width: 5px;
+        }
+        .kontakt {
+                 background-color: #4B4B4B;
+                 width: auto;
+                 padding: 10px;
+        }
+        .h1 {
+            color: white;
+        }
+        .srodek {
+            text-align: center;
+            font-size: 1.25rem;
+        }
+        .ikona {
+            width: 2vw;
+            border-radius: 50%;
+            margin-bottom: -7px;
+            margin-right: 10px;
+            margin-left: 5px;
+
+        }
+        .bialy {
+            color: white;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>  
+    <div class="nawigacja">
+        <nav id="navbar" class="navbar">
+            <a href="#O_mnie" id="a1"><b>O mnie</b></a>
+            <a href="#Projekty" id="a2"><b>Projekty</b></a>
+            <a href="#Kontakt" id="a3"><b>Kontakt</b></a>
+        </nav>
+    </div>
+    <div class="przywitanie" id="O_mnie">
+    <section id="welcome-section" class="welcome-section">
+        <h1 >Bartłomiej Malina</h1>
+        <p> Startujący Web Developer</p>
+    </section>
+    </div>
+    <div class="projekty" id="Projekty">
+        <h1 >Przykładowe projekty</h1>
+    <div class="grid">
+                <a href="ProductLanding.html" target="_blank" class="centrum">
+                    <img id="Boosting" class="obrazek"  src="https://cdn.discordapp.com/attachments/645341860671258647/877904044625133568/unknown.png" alt="Boosting">
+                    <p class="paragraf">Stronna z boostingiem 
+                    </p>
+                </a>
+                <a href="Survey.html" target="_blank">
+                    <img id="Survey" class="obrazek"  src="https://cdn.discordapp.com/attachments/645341860671258647/879747146352590848/unknown.png" alt="Ankieta">
+                    <p class="paragraf">Strona z ankietą</p>
+                </a>
+                <a href="TechnicalDocumentation.html" target="_blank">
+                    <img id="Survey" class="obrazek"  src="https://cdn.discordapp.com/attachments/645341860671258647/880092696868446258/unknown.png" alt="Dokumentacja_Techniczna">
+                    <p class="paragraf">Stronna techniczna</p>
+                </a>
+                <a href="Tribute-page.html">
+                    <img id="Survey" class="obrazek"  src="https://cdn.discordapp.com/attachments/645341860671258647/881566253955837952/unknown.png" alt="Bambusy">
+                    <p class="paragraf">Strona Informacyjna</p>
+                    </a>
+                <a href="Survey.html" target="_blank">
+                    <img id="Survey" class="obrazek"  src="https://cdn.discordapp.com/attachments/645341860671258647/879747146352590848/unknown.png" alt="Ankieta">
+                    <p class="paragraf">Strona z ankietą</p>
+                </a>
+                 <a href="TechnicalDocumentation.html" target="_blank">
+                    <img id="Survey" class="obrazek"  src="https://cdn.discordapp.com/attachments/645341860671258647/880092696868446258/unknown.png" alt="Dokumentacja_Techniczna">
+                    <p class="paragraf">Stronna techniczna</p>
+                </a>    
+    </div>
+    </div>
+    <div class="kontakt" id="Kontakt">
+        <div class="srodek">
+            <h1 class="h1">Kontakt</h1>
+            <p class="bialy"><b>
+                <a class="bialy" href="https://www.google.com/intl/pl/gmail/about/" target="_blank">
+                    <img class="ikona" src="https://img.favpng.com/7/8/7/gmail-logo-email-google-png-favpng-J7uHBJS0pqty1nQ9cTew2yd6J_t.jpg">email@email.com</a>
+                    <img class="ikona" src="https://thumbs.dreamstime.com/b/ikona-telefonu-s%C5%82uchawki-z-falami-164772732.jpg">Numer Telefonu: 123456789
+                <a class="bialy" href="ProductLanding.html" target="_blank">
+                    <img class="ikona" src="https://thumbs.dreamstime.com/b/ikona-witryny-sieci-web-%C5%9Bwiat-kt%C3%B3ry-oznacza-stron%C4%99-internetow%C4%85-163817937.jpg">Strona internetowa: www.strona.pl</a>
+            </b></p>    
+        </div>         
+    </div>
+
+
+</body>
+</main>
